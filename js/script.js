@@ -4,7 +4,9 @@ function handleSubmit() {
   const checkMail =
     /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   const checkEmail = emailValue.match(checkMail);
-  const sectionContent = document.querySelector("#info .section-content");
+  const sectionContent = document.querySelector(
+    ".infotarget-list .info .section-content"
+  );
   const submitControl = document.querySelector(".submit-email");
   if (checkEmail) {
     sectionContent.style.display = "block";
@@ -25,11 +27,24 @@ function handleOnMouseOut(element) {
   lessMore.style.display = "none";
 }
 
+/**
+ *
+ * @param {Element} element
+ */
 function handleViewMore(element) {
-  const parentElement = element.closest(".colll");
-  const sectionContent = parentElement.querySelectorAll(".cty");
+  const parentElement = element.closest(".jobinfo-item");
+  const sectionContent =
+    parentElement.querySelectorAll(".jobinfo-item-body")[0];
 
-  sectionContent.forEach((element) => {
-    element.style.display = "block";
-  });
+  if (!sectionContent) {
+    throw new Error("Not found DOM");
+  }
+
+  if (sectionContent.classList.contains("show")) {
+    sectionContent.classList.remove("show");
+    element.innerHTML = "View more";
+  } else {
+    sectionContent.classList.add("show");
+    element.innerHTML = "Less more";
+  }
 }

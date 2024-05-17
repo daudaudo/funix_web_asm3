@@ -1,5 +1,60 @@
 @media screen and (max-width: 576px) {
+  .banner {
+    height: 600px;
+  }
+
   .navigation {
+    height: auto;
     display: block;
+    padding-left: 16px;
+  }
+
+  .navigation .navigator {
+    align-items: flex-start;
+    border-left: none;
+  }
+
+  .navigation .navigator.info12 {
+    display: none;
+  }
+
+  .infotarget-list {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  section.section {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  section.section[dark] {
+    padding: 12px;
+  }
+
+  .infotarget-list .info, .infotarget-list .target {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    min-height: auto;
+  }
+
+  .jobinfo-list, .project-list, .cert-list {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    row-gap: 16px;
+  }
+
+  .jobinfo-item .btn.view-more {
+    opacity: 1;
+  }
+
+  .project-list {
+    row-gap: 32px;
+  }
+
+  .cert-list {
+    row-gap: 24px;
   }
 }
