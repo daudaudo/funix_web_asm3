@@ -1,0 +1,382 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: arial, sans-serif, tahoma;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+}
+a {
+  text-decoration: none;
+  color: #000000;
+}
+nav a {
+  text-decoration: none;
+  color: #000000;
+}
+/* Banner */
+.banner {
+  position: relative;
+  height: 350px;
+}
+.banner-title {
+  position: absolute;
+  color: white;
+  top: 35%;
+  width: 100%;
+  text-align: center;
+  text-shadow: 1px 1px 13px black;
+}
+img {
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  object-fit: cover;
+  object-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/* Navigation */
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+}
+.navigator {
+  border-left: solid 1px #e0e0e0;
+  padding: 10px;
+  height: 100%;
+  padding-top: 20px;
+  text-align: center;
+}
+.navigator:last-child {
+  border-right: solid 1px #e0e0e0;
+}
+.info12 h2 {
+  margin-bottom: 0;
+}
+.info12 {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 5px;
+}
+/* Mục tiêu và thông tin cá nhân */
+#container-infotarget {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 450px;
+  background-color: #ebebeb;
+}
+.target {
+  background-color: #f5f5f5;
+}
+
+.tar {
+  padding-top: 50px;
+  padding-left: 20px;
+  padding-right: 10px;
+}
+.section-title {
+  padding-bottom: 10px;
+}
+.info {
+  background-color: #f0f0f0;
+}
+
+.info h2 {
+  padding-top: 50px;
+  padding-left: 20px;
+}
+#info .section-content {
+  padding-left: 20px;
+  display: none;
+}
+.info2 {
+  width: 300px;
+}
+
+.myself {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.name {
+  padding-bottom: 10px;
+}
+.myself-info {
+  display: inline-block;
+  width: 120px;
+}
+.inicon {
+  margin-top: 20px;
+}
+.inicon a {
+  color: #199cdb;
+  padding: 5px;
+}
+.name {
+  padding-top: 50px;
+  padding-left: 20px;
+}
+.submit-email {
+  padding-top: 20px;
+  padding-left: 20px;
+}
+#error-email {
+  color: red;
+  font-weight: 600;
+}
+/* Thông tin nghề nghiệp */
+.container-jobinfo {
+  display: grid;
+  gap: 20px;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.colllll--1 {
+  border: 1px solid #b4b4b4;
+}
+.colllll--2 {
+  border: 1px solid #b4b4b4;
+}
+.colllll--3 {
+  border: 1px solid #b4b4b4;
+}
+.colllll--4 {
+  border: 1px solid #b4b4b4;
+}
+.colllll--5 {
+  border: 1px solid #b4b4b4;
+}
+.colllll--6 {
+  border: 1px solid #b4b4b4;
+}
+/* col */
+.colll-1,
+.colll-2,
+.colll-3,
+.colll-4,
+.colll-5,
+.colll-6 {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 75% 25%;
+}
+.cty,
+.contain-icon {
+  display: none;
+}
+.view-more,
+.less-more {
+  display: none;
+}
+.ic-toolbox,
+.ic-pencil,
+.ic-telescope,
+.ic-mic,
+.ic-tools-2 {
+  padding-top: 35px;
+  font-size: 25px;
+}
+
+.kn-title {
+  padding-top: 40px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
+.time {
+  font-style: italic;
+}
+.htai {
+  background-color: #189cdb;
+  padding: 2px;
+  border-radius: 5px;
+  display: inline-block;
+}
+.cty {
+  grid-row: 2;
+  grid-column: 1 /3;
+  padding-left: 30px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+.cty1,
+.cty2 {
+  position: relative;
+}
+.dotic::before {
+  position: absolute;
+  content: "\2022";
+  font-size: 20px;
+  top: -2px;
+  left: -15px;
+  color: #189cdb;
+}
+
+.contain-icon {
+  font-size: 25px;
+  grid-row: 2;
+  grid-column: 1 /3;
+  padding-top: 25px;
+  justify-self: center;
+  display: flex;
+  column-gap: 10px;
+  justify-content: center;
+}
+.ic-megaphone,
+.ic-strategy,
+.ic-hotairballoon,
+.ic-basket {
+  border-radius: 50%;
+  border: 1px solid #67b5e6;
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+  color: #67b5e6;
+  text-align: center;
+  margin: 5px;
+}
+.texticon {
+  font-size: 12px;
+  text-align: center;
+}
+span {
+  background: #199cdb;
+  display: inline-block;
+  height: 2px;
+  margin-right: 10px;
+  width: 45px;
+}
+.wisd {
+  width: 100%;
+  display: inline-block;
+}
+.level3 {
+  background: #dedede;
+}
+
+/* Chứng chỉ và Giải thưởng */
+.cert-title {
+  background-color: #f7f7f7;
+  padding-left: 10%;
+  padding-top: 40px;
+  margin-bottom: 0;
+}
+.container-cert {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #f7f7f7;
+  padding-left: 10%;
+  padding-right: 10%;
+  row-gap: 35px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.cert {
+  display: flex;
+}
+.certimg {
+  object-fit: contain;
+  width: 160px;
+  height: auto;
+  z-index: 1;
+}
+.cert-text {
+  display: inline-block;
+  padding-left: 20px;
+}
+/* Dự án */
+.container-project {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  column-gap: 30px;
+}
+.project {
+  border: 1px solid #b4b4b4;
+}
+.pjtit {
+  border-bottom: 1px solid #b4b4b4;
+  padding-bottom: 5px;
+  font-weight: 550;
+  padding-left: 5px;
+}
+.pjh {
+  padding-left: 10%;
+  margin-top: 40px;
+}
+.imgpj {
+  height: 240px;
+  object-fit: contain;
+}
+.pj1 {
+  display: flex;
+  border-bottom: 1px solid #b4b4b4;
+  padding-bottom: 10px;
+  padding-top: 5px;
+  justify-content: center;
+  column-gap: 20px;
+}
+.pj2,
+.pj3 {
+  display: flex;
+}
+.mota,
+.nhiemvu {
+  display: flex;
+  border-bottom: 1px solid #b4b4b4;
+  padding-bottom: 10px;
+  padding-top: 5px;
+}
+.congnghe {
+  display: flex;
+  padding-bottom: 20px;
+  padding-top: 5px;
+}
+.yn1 {
+  width: 30%;
+  padding-left: 5px;
+}
+.yn2 {
+  width: 70%;
+}
+.highligt {
+  background-color: #189cdb;
+  color: white;
+  border: 1px solid;
+  border-radius: 30px;
+  padding: 2px 5px;
+}
+/* Footer */
+.foote {
+  display: flex;
+  font-style: normal;
+  background-color: #f7f7f7;
+  color: #34a7de;
+  font-size: 18px;
+  justify-content: center;
+  align-content: center;
+  gap: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+i {
+  font-style: normal;
+}
+.foote a {
+  color: #000000;
+  text-decoration: none;
+}
